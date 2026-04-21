@@ -4,7 +4,8 @@
 
 A cinematic, scroll-driven portfolio built with Vite + React — featuring immersive 3D environments, interactive terminal access, and a glassmorphic dark design system.
 
-🔗 **Live Site:** [profile-eosin-six.vercel.app](https://profile-eosin-six.vercel.app/)
+🔗 **Vercel:** [profile-eosin-six.vercel.app](https://profile-eosin-six.vercel.app/)
+🔗 **Netlify:** [shrprofile.netlify.app](https://shrprofile.netlify.app/)
 
 ---
 
@@ -110,7 +111,8 @@ Hosted on **Vercel** with automatic deployments on every push to `main`.
 
 | Platform | URL |
 |---|---|
-| Production | [profile-eosin-six.vercel.app](https://profile-eosin-six.vercel.app/) |
+| Vercel | [profile-eosin-six.vercel.app](https://profile-eosin-six.vercel.app/) |
+| Netlify | [shrprofile.netlify.app](https://shrprofile.netlify.app/) |
 | GitHub | [github.com/ShreyasVavley/profile](https://github.com/ShreyasVavley/profile) |
 
 ---
