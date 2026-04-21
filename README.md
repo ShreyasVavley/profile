@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✦ Midnight Obsidian — Shreyas Vavley's Portfolio
 
-## Getting Started
+> *"Building Intelligent Systems."*
 
-First, run the development server:
+A cinematic, scroll-driven portfolio built with Vite + React — featuring immersive 3D environments, interactive terminal access, and a glassmorphic dark design system.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🔗 **Live Site:** [profile-eosin-six.vercel.app](https://profile-eosin-six.vercel.app/)
+
+---
+
+## ✦ Showcase
+
+| Section | Description |
+|---|---|
+| **Core** | Hero landing with animated name reveal and Spline 3D background |
+| **The Interface** | Nexus Stream — Full-stack Cinematic OTT Platform showcase |
+| **The Intelligence** | RAG Architecture — Second Brain & Vavley AI projects |
+| **The Analyst** | WhatsApp Pro Analyzer with live toggle between modes |
+| **System Access** | Interactive terminal with live command responses |
+
+---
+
+## ✦ Tech Stack
+
+```
+Frontend   →  React 18 + Vite 8
+Animation  →  Framer Motion 11
+3D         →  Spline (@splinetool/react-spline)
+Styling    →  Tailwind CSS v4 (Vanilla CSS tokens)
+Icons      →  Lucide React
+Language   →  TypeScript
+Hosting    →  Vercel
+Repo       →  GitHub (ShreyasVavley/profile)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✦ Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── App.tsx                  # Root scroll-driven narrative layout
+├── main.tsx                 # React DOM entry point
+├── index.css                # Global design tokens + glassmorphism utilities
+└── components/
+    ├── SplineScene.tsx      # 3D scene loader with error boundary
+    ├── Terminal.tsx         # Interactive Vavley-OS terminal emulator
+    ├── GlassCard.tsx        # Glassmorphic project cards
+    ├── TiltCard.tsx         # 3D tilt-on-hover project feature card
+    ├── ObsidianToggle.tsx   # Animated mode toggle (Analytics ↔ Security)
+    └── SpotlightButton.tsx  # Magnetic spotlight CTA button
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✦ Running Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Clone the repository
+git clone https://github.com/ShreyasVavley/profile.git
+cd profile
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Install dependencies
+npm install
 
-## Deploy on Vercel
+# Start the Vite dev server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ✦ Building for Production
+
+```bash
+npm run build
+```
+
+Output lands in `/dist` — ready to drag-and-drop deploy anywhere.
+
+---
+
+## ✦ Design System
+
+The portfolio uses a custom **Midnight Obsidian** design language:
+
+- **Background**: `#050505` — near-pure black obsidian
+- **Accent Blue**: `#3b82f6` — electric neural blue
+- **Accent Violet**: `#8b5cf6` — deep intelligence violet
+- **Typography**: System-native sans-serif with tight tracking
+- **Effects**: Glassmorphism, noise overlay, dynamic radial gradients, blur depth layers
+
+---
+
+## ✦ Key Features
+
+- ♾️ **Scroll-driven storytelling** — phases unlock as you scroll through the narrative
+- 🌐 **Interactive 3D** — Spline scene scales and drifts with scroll velocity
+- 💻 **Live Terminal** — Vavley-OS terminal emulator with real command responses
+- 🎛️ **Dynamic Mode Toggle** — switches between Analytics and Security display states
+- 🛡️ **Resilient 3D** — Error boundary ensures the page never breaks if Spline fails to load
+- 🚀 **Vite-powered** — Lightning fast HMR, esbuild compiler, sub-3s cold builds
+
+---
+
+## ✦ Deployment
+
+Hosted on **Vercel** with automatic deployments on every push to `main`.
+
+| Platform | URL |
+|---|---|
+| Production | [profile-eosin-six.vercel.app](https://profile-eosin-six.vercel.app/) |
+| GitHub | [github.com/ShreyasVavley/profile](https://github.com/ShreyasVavley/profile) |
+
+---
+
+## ✦ License
+
+Personal portfolio — all rights reserved © 2026 Shreyas Vavley.
