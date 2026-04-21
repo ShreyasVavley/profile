@@ -7,7 +7,7 @@ import { GlassCard } from "@/components/GlassCard";
 import { ObsidianToggle } from "@/components/ObsidianToggle";
 import { AntigravityTerminal } from "@/components/Terminal";
 import { SplineScene } from "@/components/SplineScene";
-import { Brain, Cpu, MessageSquare, ShieldCheck, Zap } from "lucide-react";
+import { Brain, Cpu, MessageSquare, ShieldCheck, Zap, Linkedin, Instagram, Mail } from "lucide-react";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -243,10 +243,68 @@ export default function Home() {
         </div>
         <AntigravityTerminal />
         
-        <footer className="absolute bottom-12 w-full text-center">
+        <footer className="mt-16 w-full flex flex-col items-center gap-6 pb-16">
+          {/* Social Links */}
+          <div className="flex items-center gap-6">
+            <a
+              href="https://www.linkedin.com/in/shreyas-s-v-9748a1379/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 glass hover:border-accent-blue/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] transition-all duration-300"
+            >
+              <Linkedin className="w-4 h-4 text-white/40 group-hover:text-accent-blue transition-colors duration-300" />
+              <span className="text-xs text-white/30 group-hover:text-white/70 transition-colors duration-300 font-mono">LinkedIn</span>
+            </a>
+            <a
+              href="https://www.instagram.com/shreyas_vavley_official/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 glass hover:border-accent-violet/50 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)] transition-all duration-300"
+            >
+              <Instagram className="w-4 h-4 text-white/40 group-hover:text-accent-violet transition-colors duration-300" />
+              <span className="text-xs text-white/30 group-hover:text-white/70 transition-colors duration-300 font-mono">Instagram</span>
+            </a>
+            <a
+              href="mailto:shreyasvavley@gmail.com"
+              className="group flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 glass hover:border-white/30 hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] transition-all duration-300"
+            >
+              <Mail className="w-4 h-4 text-white/40 group-hover:text-white/80 transition-colors duration-300" />
+              <span className="text-xs text-white/30 group-hover:text-white/70 transition-colors duration-300 font-mono">Email</span>
+            </a>
+          </div>
           <p className="text-xs text-white/10 tracking-[1em] uppercase">Shreyas Vavley © 2026</p>
         </footer>
       </section>
+
+      {/* Fixed Social Sidebar */}
+      <div className="fixed left-6 bottom-0 z-40 hidden lg:flex flex-col items-center gap-4 pb-6">
+        <a
+          href="https://www.linkedin.com/in/shreyas-s-v-9748a1379/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group p-2.5 rounded-xl border border-white/10 glass hover:border-accent-blue/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-all duration-300 hover:-translate-y-0.5"
+          title="LinkedIn"
+        >
+          <Linkedin className="w-4 h-4 text-white/30 group-hover:text-accent-blue transition-colors duration-300" />
+        </a>
+        <a
+          href="https://www.instagram.com/shreyas_vavley_official/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group p-2.5 rounded-xl border border-white/10 glass hover:border-accent-violet/50 hover:shadow-[0_0_15px_rgba(139,92,246,0.2)] transition-all duration-300 hover:-translate-y-0.5"
+          title="Instagram"
+        >
+          <Instagram className="w-4 h-4 text-white/30 group-hover:text-accent-violet transition-colors duration-300" />
+        </a>
+        <a
+          href="mailto:shreyasvavley@gmail.com"
+          className="group p-2.5 rounded-xl border border-white/10 glass hover:border-white/30 hover:shadow-[0_0_15px_rgba(255,255,255,0.08)] transition-all duration-300 hover:-translate-y-0.5"
+          title="Email"
+        >
+          <Mail className="w-4 h-4 text-white/30 group-hover:text-white/80 transition-colors duration-300" />
+        </a>
+        <div className="w-px h-16 bg-gradient-to-b from-white/10 to-transparent" />
+      </div>
 
       {/* Scroll Indicator */}
       <motion.div 
